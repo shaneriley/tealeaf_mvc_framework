@@ -1,0 +1,42 @@
+html, body {
+  padding: 25px 0;
+  margin: 0;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #16997c;
+  background: #5bccb3;
+}
+
+main {
+  display: block;
+  max-width: 450px;
+  padding: 20px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #CC183E;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 15px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+td {
+  padding: 5px 10px;
+  border-top: 1px solid #ececec;
+}
+
+form {
+  padding-top: 40px;
+}

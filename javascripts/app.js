@@ -15,7 +15,7 @@ var App = {
   removePerson: function(e) {
     e.preventDefault();
 
-    var $e = $(e.target).closest("li");
+    var $e = $(e.target).closest("tr");
 
     this.people.remove(+$e.attr("data-id"));
     this.renderTotal();
@@ -26,7 +26,7 @@ var App = {
 };
 
 App.View = new View({
-  tag_name: "li",
+  tag_name: "tr",
   template: Handlebars.compile($("#person").html()),
   events: {
     "click a.remove": App.removePerson.bind(App)

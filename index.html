@@ -3,6 +3,8 @@
   <head>
     <title></title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/framework.css" />
+    <link rel="stylesheet" href="stylesheets/base.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="javascripts/handlebars-v3.0.0.js"></script>
     <script src="javascripts/utilities.js"></script>
@@ -10,7 +12,12 @@
   </head>
   <body>
     <main>
-      <ul id="people"></ul>
+      <table id="people">
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Title</th>
+        </tr>
+      </table>
       <p id="total">Total people: <strong>0</strong></p>
       <form action="" method="post">
         <fieldset>
@@ -26,13 +33,9 @@
       </form>
     </main>
     <script id="person" type="text/x-handlebars">
-      <dl>
-        <dt>Name:</dt>
-        <dd>{{name}}</dd>
-        <dt>Title:</dt>
-        <dd>{{title}}</dd>
-      </dl>
-      <a href="#" class="remove">Remove</a>
+      <td>{{name}}</td>
+      <td>{{title}}</td>
+      <td><a href="#" class="remove">Remove</a></td>
     </script>
     <script src="javascripts/app.js"></script>
   </body>
